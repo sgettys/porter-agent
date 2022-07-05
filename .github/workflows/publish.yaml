@@ -56,4 +56,4 @@ jobs:
           tags: ${{ env.REGISTRY }}/sgettys/porter-agent:${{ env.VERSION }}
           build-args: |
             PORTER_VERSION=${{ env.PORTER_VERSION }}
-            KUBERNETES_PLUGIN_VERSION=${{ env.KUBERNETS_PLUGIN_VERSION }}
+            KUBERNETES_PLUGIN_VERSION=${{ env.KUBERNETES_PLUGIN_VERSION }}

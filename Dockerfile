@@ -1,5 +1,5 @@
-FROM debian:buster-slim as builder
 ARG PORTER_VERSION
+FROM debian:buster-slim as builder
 ARG KUBERNETES_PLUGIN_VERSION
 RUN apt-get update && apt-get install -y curl
 RUN curl -L https://cdn.porter.sh/plugins/kubernetes/${KUBERNETES_PLUGIN_VERSION}/kubernetes-linux-amd64 -o /tmp/kubernetes

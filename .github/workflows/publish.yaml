@@ -14,6 +14,7 @@ env:
   REGISTRY: ghcr.io
   PORTER_VERSION: v1.0.0-beta.1
   KUBERNETES_PLUGIN_VERSION: v1.0.0-beta.3
+  TERRAFORM_MIXIN_VERSION: v0.10.0
   VERSION: v1.0.0-beta.1
 
 # A workflow can be made of many jobs, but this example puts all the steps under one job.
@@ -57,3 +58,4 @@ jobs:
           build-args: |
             PORTER_VERSION=${{ env.PORTER_VERSION }}
             KUBERNETES_PLUGIN_VERSION=${{ env.KUBERNETES_PLUGIN_VERSION }}
+            TERRAFORM_MIXIN_VERSION=${{ env.TERRAFORM_MIXIN_VERSION }}

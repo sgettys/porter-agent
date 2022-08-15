@@ -12,10 +12,10 @@ on:
 # To do this, go to settings -> secrets -> new secret.
 env:
   REGISTRY: ghcr.io
-  PORTER_VERSION: v1.0.0-beta.1
+  PORTER_VERSION: v1.0.0-beta.2
   KUBERNETES_PLUGIN_VERSION: v1.0.0-beta.3
   TERRAFORM_MIXIN_VERSION: v0.10.0
-  VERSION: v1.0.0-beta.1
+  VERSION: v1.0.0-beta.2
 
 # A workflow can be made of many jobs, but this example puts all the steps under one job.
 jobs:

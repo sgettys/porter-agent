@@ -12,10 +12,11 @@ on:
 # To do this, go to settings -> secrets -> new secret.
 env:
   REGISTRY: ghcr.io
-  PORTER_VERSION: v1.0.0-beta.2
+  PORTER_VERSION: v1.0.0-beta.3
   KUBERNETES_PLUGIN_VERSION: v1.0.0-beta.3
+  AZURE_PLUGIN_VERSION: v0.11.2
   TERRAFORM_MIXIN_VERSION: v0.10.0
-  VERSION: v1.0.0-beta.2
+  VERSION: v1.0.0-beta.3
 
 # A workflow can be made of many jobs, but this example puts all the steps under one job.
 jobs:
@@ -57,5 +58,5 @@ jobs:
           tags: ${{ env.REGISTRY }}/sgettys/porter-agent:${{ env.VERSION }}
           build-args: |
             PORTER_VERSION=${{ env.PORTER_VERSION }}
-            KUBERNETES_PLUGIN_VERSION=${{ env.KUBERNETES_PLUGIN_VERSION }}
+            AZURE_PLUGIN_VERSION=${{ env.AZURE_PLUGIN_VERSION }}
             TERRAFORM_MIXIN_VERSION=${{ env.TERRAFORM_MIXIN_VERSION }}

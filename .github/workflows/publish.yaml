@@ -59,4 +59,5 @@ jobs:
           build-args: |
             PORTER_VERSION=${{ env.PORTER_VERSION }}
             AZURE_PLUGIN_VERSION=${{ env.AZURE_PLUGIN_VERSION }}
+            KUBERNETES_PLUGIN_VERSION=${{ env.KUBERNETES_PLUGIN_VERSION }}
             TERRAFORM_MIXIN_VERSION=${{ env.TERRAFORM_MIXIN_VERSION }}
